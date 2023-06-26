@@ -15,5 +15,5 @@ if __name__ == "__main__":
     while 1 == 1:
         registered_user = get_registered_user()
         print(registered_user)
-        producer.send("first", registered_user)
+        producer.send("registered_user", registered_user)
         time.sleep(4)
